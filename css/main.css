@@ -1,5 +1,11 @@
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  line-height: 1.5;
+  font-family: georgia, serif;
 }
 
 *,
@@ -9,7 +15,46 @@ html {
 }
 
 img {
+  display: block;
   width: 100%;
+}
+
+h2 {
+  font-family: "Patua One", sans-serif;
+  color: #30658d;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+nav {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2rem;
+}
+
+a {
+  font-family: "Patua One", sans-serif;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 1rem;
 }
 
 header {
