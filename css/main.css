@@ -5,7 +5,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   line-height: 1.5;
-  font-family: georgia, serif;
+  font-family: georgia;
   background-color: #f2f1ed;
 }
 
@@ -51,9 +51,10 @@ p {
 }
 
 body {
-  margin: 1rem;
+  margin: 0;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1.5fr 1fr 2fr;
   grid-gap: 1rem;
 }
